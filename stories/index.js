@@ -16,6 +16,7 @@ import Show from "components/Appointment/Show";
 import Confirm from "components/Appointment/Confirm";
 import Status from "components/Appointment/Status";
 import Error from "components/Appointment/Error";
+import Form from "components/Appointment/Form";
 
 storiesOf("Button", module)
   .addParameters({
@@ -203,3 +204,23 @@ storiesOf("Error", module)
       onClose={action("onClose")}
     />
   ))
+
+storiesOf("Edit", module)
+  .add("Edit", () => (
+    <Form
+     student="Lydia Miller-Jones"
+     interviewer={3}
+     interviewers={interviewers}
+     onSave={action("onSave")}
+     onCancel={action("onCancel")}
+     />
+  ))
+
+  storiesOf("Create", module)
+    .add("Create", () => (
+      <Form 
+       interviewers={interviewers}
+       onSave={action("onSave")}
+       onCancel={action("onCancel")}
+       />
+    ))

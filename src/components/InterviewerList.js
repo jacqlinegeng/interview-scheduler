@@ -4,6 +4,10 @@ import "components/InterviewerList.scss";
 
 function InterviewerList(props) {
 
+  // function setInterviewer() {
+  //   props.onChange(interviewer.id)
+  // } 
+
   const interviewersList = props.interviewers.map((interviewer) => {
     return (
       <InterviewerListItem 
