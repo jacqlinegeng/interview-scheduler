@@ -17,6 +17,7 @@ import Confirm from "components/Appointment/Confirm";
 import Status from "components/Appointment/Status";
 import Error from "components/Appointment/Error";
 import Form from "components/Appointment/Form";
+import Header from "components/Appointment/Header";
 
 storiesOf("Button", module)
   .addParameters({
@@ -162,6 +163,23 @@ storiesOf("Appointment", module)
     <Header
       time="12pm"
     />
+  ))
+  .add("Appointment Empty", () => (
+    <>
+      <Appointment id={1} time="4pm" />
+      <Appointment time="5pm" />
+    </>
+  ))
+
+  .add("Appointment Booked", () => (
+    <>
+      <Appointment
+        id={1}
+        time="4pm"
+        interview={{ student: "Lydia Miller-Jones", interviewer }}
+      />
+      <Appointment time="5pm" />
+    </>
   ))
 
 storiesOf("Empty", module)
