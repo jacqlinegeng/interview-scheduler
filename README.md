@@ -28,8 +28,8 @@ The client application communicates with an API server over HTTP, using the JSON
 - The application makes API requests to load and persist data. We do not lose data after a browser refresh.
 
 ## Final Product
-!["Screenshot of book appointment page"]()
-!["Screenshot of deleting appointment"]()
+!["Screenshot of book appointment page"](https://github.com/jacqlinegeng/interview-scheduler/blob/master/docs/Screen%20Shot%202022-10-13%20at%208.14.57%20PM.png?raw=true)
+!["Screenshot of deleting appointment"](https://github.com/jacqlinegeng/interview-scheduler/blob/master/docs/Screen%20Shot%202022-10-13%20at%208.16.14%20PM.png?raw=true)
 
 ## Setup
 
